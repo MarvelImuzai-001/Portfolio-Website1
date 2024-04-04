@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+p {
+  color: rgb(84, 83, 83);
+}
+
+/* Transition */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+/* desktop nav */
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
+}
+#nav-content {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  z-index: 999;
+}
+.nav-links {
+  list-style: none;
+  font-size: 1.5rem;
+  gap: 2rem;
+}
+.nav-links a {
+  color: rgb(237, 235, 235);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(122, 120, 120);
+  text-decoration: none;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.logo:hover {
+  cursor: default;
+}
+i {
+  color: black;
+  font-size: 2rem;
+}
+#menu {
+  display: none;
+  color: white;
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: rgb(0, 0, 0);
+}
+.sidebar li {
+  padding: 20px;
+}
+.sidebar a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  color: rgb(122, 120, 120);
+}
+.sidebar i {
+  color: white;
+}
+/* section-profile */
+section {
+  padding-top: 20vh;
+  height: 100vh;
+  margin: 0 10rem;
+  min-height: fit-content;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  /* gap: 5rem; */
+  height: 80vh;
+  padding-top: 30vh;
+}
+.image-container {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
+.image-container img {
+  border-radius: 30%;
+}
+
+.text-container {
+  align-self: center;
+  text-align: center;
+}
+.text-container h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.text-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* icon */
+.linkedin {
+  font-size: 2rem;
+}
+.git {
+  font-size: 2rem;
+}
+/* button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  font-weight: 600;
+  transition: all 300s ease;
+  padding: 1rem;
+  width: 9rem;
+  border-radius: 4rem;
+  font-size: 1rem;
+}
+/* socialmedia */
+.social-container {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.btn1 {
+  background-color: rgb(253, 252, 252);
+  color: black;
+  cursor: pointer;
+  outline: none;
+  border: 0.1rem solid black;
+}
+.btn2 {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.btn1:hover {
+  background-color: black;
+  color: white;
+}
+.btn2:hover {
+  background-color: rgb(89, 88, 88);
+  color: rgb(247, 246, 246);
+}
+/* about section  */
+#about {
+  display: flex;
+  justify-content: center;
+  /* gap: 5rem; */
+  height: 80vh;
+  padding-top: 25vh;
+}
+.about-container {
+  padding-top: 7vh;
+}
+.about-image-container {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
+.about-image2-container {
+  padding: 1rem 3rem;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: 1rem;
+  text-align: center;
+}
+.about-details-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container {
+  display: flex;
+}
+.about-me {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 3rem;
+}
+.text-container {
+  margin: 3rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+}
+.about-image2-container h3 {
+  font-size: 1.5rem;
+}
+
+/* Experience section  */
+#experience {
+  display: relative;
+  height: 80vh;
+  padding-top: 20vh;
+}
+.experience-title {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  gap: 3rem;
+  flex-direction: row;
+}
+article {
+  display: flex;
+  width: 15rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background-color: white;
+  border-radius: 2rem;
+  border: 0.1rem solid black;
+  text-align: center;
+  gap: 2rem;
+}
+.experience-text {
+  margin-bottom: 2.5rem;
+}
+.about-container {
+  gap: 2rem;
+}
+/* project */
+.project-img {
+  width: 400px;
+  height: 400px;
+}
+.color-container {
+  background-color: white;
+}
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+#project {
+  display: relative;
+  height: 100vh;
+  padding-top: 14vh;
+}
+.btn-3 {
+  background-color: white;
+  color: black;
+}
+.btn-4 {
+  background-color: Black;
+  color: white;
+}
+.btn-5 {
+  background-color: white;
+  color: black;
+}
+.btn-6 {
+  background-color: Black;
+  color: white;
+}
+.btn-7 {
+  background-color: white;
+  color: black;
+}
+.btn-8 {
+  background-color: Black;
+  color: white;
+}
+.project-text {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.section_text_p1,
+.title {
+  text-align: center;
+}
+.experience-details-container {
+  margin-top: -3rem;
+  padding-top: 0;
+}
+.title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0.5rem;
+  font-size: 3rem;
+}
+.section_text_p1 {
+  font-size: 1rem;
+}
+.about-container {
+  margin: 0;
+}
+.project-btn {
+  cursor: pointer;
+}
+
+/* contact section  */
+.contact-text {
+  text-align: center;
+}
+.contact-title {
+  text-align: center;
+}
+.contact-container {
+  display: flex;
+  border: 2px solid;
+  border-radius: 50px;
+  margin: 2rem auto;
+  justify-content: center;
+  padding: 1rem;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  padding-top: 35vh;
+}
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+  color: white;
+}
+
+.contact-icon a {
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+}
+.contact-title {
+  font-size: 3rem;
+}
+
+footer {
+  height: 26vh;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contact-icon a:hover {
+  color: rgb(138, 135, 135);
+}
