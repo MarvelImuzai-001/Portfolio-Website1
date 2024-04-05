@@ -279,6 +279,7 @@ article {
 .project-img {
   width: 400px;
   height: 400px;
+  border-radius: none;
 }
 .color-container {
   background-color: white;
@@ -340,10 +341,9 @@ article {
 .about-container {
   margin: 0;
 }
-.project-btn {
-  cursor: pointer;
+.project-text {
+  text-align: justify;
 }
-
 /* contact section  */
 .contact-text {
   text-align: center;
